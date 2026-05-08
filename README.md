@@ -68,15 +68,6 @@ C:\Tools\CodexVerification
 You can choose another location by setting `CODEX_VERIFICATION_HOME` or by
 passing `-ToolRoot` to `verify_toolchain.ps1`.
 
-Project-local `.venv/`, `.tools/`, and `.lake/packages/` paths should be
-junctions to shared tools when needed, not full duplicate installations inside
-Dropbox or a paper folder.
-
-The IDE will not reliably install these tools or prompt the user to choose a
-tool location. Codex may read `AGENTS.md` and run `verify_toolchain.ps1`, but
-the user or project maintainer should create the shared tool root first, or set
-`CODEX_VERIFICATION_HOME` to an existing tool root.
-
 Minimum setup check after copying the workflow files into a paper folder:
 
 ```powershell
@@ -85,7 +76,7 @@ Minimum setup check after copying the workflow files into a paper folder:
 
 If the script cannot find Python, Lean, or Mathematica, the workflow still works
 as prompts and checklists, but mathematical verification is weaker until the
-tool root is configured.
+tool root is configured. See `TOOLCHAIN_README.md` for detailed setup options.
 
 ## 中文用法
 

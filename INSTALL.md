@@ -45,10 +45,6 @@ Then copy or symlink `AGENTS.md` into the paper root. Codex reads `AGENTS.md` mo
 
 ## Toolchain
 
-The IDE does not reliably install Python, Lean, Mathlib, or Mathematica, and it
-should not guess where large toolchains belong. Configure a shared tool root
-explicitly.
-
 Run this after copying if you have configured the local toolchain:
 
 ```powershell
