@@ -1,4 +1,4 @@
-# Econometrica AI Research System
+﻿# Econometrica AI Research System
 
 A local Codex workflow system for economics papers targeting Econometrica-level research quality.
 
@@ -72,9 +72,24 @@ Project-local `.venv/`, `.tools/`, and `.lake/packages/` paths should be
 junctions to shared tools when needed, not full duplicate installations inside
 Dropbox or a paper folder.
 
+The IDE will not reliably install these tools or prompt the user to choose a
+tool location. Codex may read `AGENTS.md` and run `verify_toolchain.ps1`, but
+the user or project maintainer should create the shared tool root first, or set
+`CODEX_VERIFICATION_HOME` to an existing tool root.
+
+Minimum setup check after copying the workflow files into a paper folder:
+
+```powershell
+.\verify_toolchain.ps1
+```
+
+If the script cannot find Python, Lean, or Mathematica, the workflow still works
+as prompts and checklists, but mathematical verification is weaker until the
+tool root is configured.
+
 ## 中文用法
 
-在 Codex Desktop 里打开论文根目录后，你不需要记住每个 workflow 或 stage。直接用自然语言即可，建议以 `按系统处理：` 开头：
+在 Codex Desktop 里打开论文根目录后，你不需要记住每个 workflow 或 stage。直接使用自然语言即可；为了路由更稳定，建议以 `按系统处理：` 开头。
 
 ```text
 按系统处理：我想讨论一个新的课题，领域大概是平台搜索和广告。

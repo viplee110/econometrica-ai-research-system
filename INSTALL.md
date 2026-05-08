@@ -1,4 +1,4 @@
-# Installation Into a Paper Folder
+﻿# Installation Into a Paper Folder
 
 ## Option A - Copy Files
 
@@ -44,6 +44,10 @@ git submodule add https://github.com/YOUR-USERNAME/econometrica-ai-research-syst
 Then copy or symlink `AGENTS.md` into the paper root. Codex reads `AGENTS.md` most reliably when it is at the project root.
 
 ## Toolchain
+
+The IDE does not reliably install Python, Lean, Mathlib, or Mathematica, and it
+should not guess where large toolchains belong. Configure a shared tool root
+explicitly.
 
 Run this after copying if you have configured the local toolchain:
 
