@@ -19,8 +19,7 @@ For high-stakes idea, model, theorem, manuscript, review, or revision decisions,
 - Prefer the shared verification tool root outside paper folders. On Windows the default is `C:\Tools\CodexVerification`; users may override it with `CODEX_VERIFICATION_HOME`.
 - Use `C:\Tools\CodexVerification\Python312\python.exe` for Python-based symbolic algebra, numerical checks, counterexample searches, plots, and SMT checks unless `CODEX_VERIFICATION_HOME` points elsewhere.
 - Use `C:\Tools\CodexVerification\elan\bin\lean.exe` and `C:\Tools\CodexVerification\elan\bin\lake.exe` for Lean 4 verification unless `CODEX_VERIFICATION_HOME` points elsewhere. Set `ELAN_HOME` to the shared `elan` directory before invoking them.
-- If legacy project-local paths are needed, `.venv\Scripts` and `.tools\elan` should be junctions to the shared tool root, not full tool installations inside the paper folder.
-- Keep large Lake dependencies such as `.lake\packages\mathlib` in shared storage, for example `C:\Tools\CodexVerification\lean_packages\lean-v4.29.1`, and leave project-local junctions when Lake expects package paths under `.lake\packages`.
+- Keep large verification tools and package caches in the shared tool root, not inside paper folders.
 - Mathematica 13.0 is installed at `C:\Program Files\Wolfram Research\Mathematica\13.0`. Use `wolframscript.exe` for symbolic checks. The default sandbox may not be able to read WolframScript's user configuration directory, so Mathematica commands may require approval to run outside the sandbox. Do not claim Mathematica verification unless the command succeeds and its output is recorded.
 - Run `.\verify_toolchain.ps1` to test the local toolchain.
 

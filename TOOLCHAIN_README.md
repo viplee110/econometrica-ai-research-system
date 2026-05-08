@@ -25,19 +25,6 @@ passing `-ToolRoot` to `verify_toolchain.ps1`.
 - Optional shared Lake packages:
   - `C:\Tools\CodexVerification\lean_packages\lean-vX.Y.Z\`
 
-Paper folders should not contain real `.venv/`, `.tools/`, or `.lake/packages`
-installations when those directories are large. If a project needs legacy local
-paths, create junctions from the project folder to the shared tool root.
-
-Example junction layout:
-
-```powershell
-New-Item -ItemType Directory -Force .venv
-New-Item -ItemType Junction -Path .venv\Scripts -Target C:\Tools\CodexVerification\Python312
-New-Item -ItemType Directory -Force .tools
-New-Item -ItemType Junction -Path .tools\elan -Target C:\Tools\CodexVerification\elan
-```
-
 For Lean projects with Mathlib, keep the project files in the paper folder:
 
 ```text
@@ -47,9 +34,8 @@ lean-toolchain
 YourLeanLibrary/
 ```
 
-Move large package directories such as `.lake/packages/mathlib` to the shared
-tool root and leave junctions behind. This keeps Lake paths stable while moving
-the actual dependency storage out of Dropbox or paper folders.
+Keep large package caches in the shared tool root when possible, especially when
+working inside cloud-synced folders such as Dropbox.
 
 ## Mathematica
 
@@ -127,5 +113,4 @@ $env:ELAN_HOME = "C:\Tools\CodexVerification\elan"
 ```
 
 Mathlib should be installed only when needed, because it is a large dependency.
-Prefer shared package storage under `C:\Tools\CodexVerification\lean_packages`
-plus project-local junctions.
+Prefer shared package storage under `C:\Tools\CodexVerification\lean_packages`.

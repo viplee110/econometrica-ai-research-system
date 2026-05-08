@@ -274,7 +274,7 @@ The workflow can use:
 - Git
 - LaTeX
 
-Tool installation is intentionally not committed to this repo. Do not commit `.venv/`, `.tools/`, `.lake/`, downloaded installers, package caches, or paper-specific outputs.
+Tool installation is intentionally not committed to this repo. Do not commit downloaded installers, package caches, or paper-specific outputs.
 
 ## GitHub Installation Pattern
 

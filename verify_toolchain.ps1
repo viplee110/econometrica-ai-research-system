@@ -26,8 +26,6 @@ function Note-Failure($Message) {
 }
 
 $Python = First-ExistingPath @(
-  (Join-Path $Root ".venv\Scripts\python.exe"),
-  (Join-Path $Root ".tools\Python312\python.exe"),
   (Join-Path $ToolRoot "Python312\python.exe")
 )
 if (-not $Python) {
@@ -38,7 +36,6 @@ if (-not $Python) {
 }
 
 $ElanHome = First-ExistingPath @(
-  (Join-Path $Root ".tools\elan"),
   (Join-Path $ToolRoot "elan")
 )
 $Lean = if ($ElanHome) { Join-Path $ElanHome "bin\lean.exe" } else { $null }
