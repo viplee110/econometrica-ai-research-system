@@ -348,7 +348,7 @@ Before assigning referee roles:
 - Infer the manuscript's narrowest defensible field, closest literature themes, main method, contribution type, and main technical risk.
 - Select referees dynamically from those features rather than using a fixed field template.
 - Do not default to IO, search, networks, theory, econometrics, or any named field unless the current manuscript actually belongs there.
-- Ask for field confirmation before running the review only if the profile is missing, provisional, stale, or contradicted by new evidence.
+- Ask for field confirmation before running the review only if the profile is missing, provisional, stale, marked `Reopen requested`, or contradicted by new evidence.
 - Treat older paper-specific methodology files as historical records rather than referee-role templates.
 - Write the final role list into `panel_config.md` before creating any individual referee prompt.
 
@@ -586,7 +586,7 @@ Read ECONOMETRICA_AI_HUMAN_WORKFLOW.md. We have passed the idea and contribution
 ### Simulated Econometrica Review
 
 ```text
-Read ECONOMETRICA_AI_HUMAN_WORKFLOW.md. Run Stage 7. Reuse confirmed field_profile.md when current; if it is missing, provisional, or stale, create or update it from the closest-literature evidence and stop for field confirmation before running referee prompts. Then create referee_reports/round_N/panel_config.md by detecting the paper's narrowest field, closest literature themes, main method, contribution type, main risk, calibration anchors, and control-paper calibration plan if available. Simulate the Econometrica review board with dynamically assigned Referees 1-4, Referee 5 Scientific Judge, Referee 6 Advocate, Associate Editor, and Co-Editor. Also create dilution_check.md from only the current manuscript and contribution_lock.md. Use parallel isolated agents if available; otherwise use serial isolated referee prompts. Write referee_reports/round_N/ files and update risk_register.md. Rank objections by fatality. Do not edit the manuscript in this pass. Stop for my decision.
+Read ECONOMETRICA_AI_HUMAN_WORKFLOW.md. Run Stage 7. Reuse confirmed field_profile.md when current; if it is missing, provisional, stale, or marked `Reopen requested`, create or update it from the closest-literature evidence and stop for field confirmation before running referee prompts. Then create referee_reports/round_N/panel_config.md by detecting the paper's narrowest field, closest literature themes, main method, contribution type, main risk, calibration anchors, and control-paper calibration plan if available. Simulate the Econometrica review board with dynamically assigned Referees 1-4, Referee 5 Scientific Judge, Referee 6 Advocate, Associate Editor, and Co-Editor. Also create dilution_check.md from only the current manuscript and contribution_lock.md. Use parallel isolated agents if available; otherwise use serial isolated referee prompts. Write referee_reports/round_N/ files and update risk_register.md. Rank objections by fatality. Do not edit the manuscript in this pass. Stop for my decision.
 ```
 
 ### Referee-Guided Revision

@@ -164,7 +164,7 @@ Route:
 - Search for closest substitute papers when web/search tools are available.
 - Create or update `literature_probe.md` and `field_profile.md`.
 - Mark literature and field classifications as provisional if search tools are unavailable.
-- Stop for human confirmation if `field_profile.md` is new, provisional, stale, or materially changed.
+- Stop for human confirmation if `field_profile.md` is new, provisional, stale, marked `Reopen requested`, or materially changed.
 
 ### Model Generation
 
@@ -191,7 +191,7 @@ Route:
 - Run D4.
 - If the primitive is unclear or the valuable object is reduced-form, run a Primitive Hunter / Theorem Generator Panel before ordinary model generation.
 - Create or update `primitive_hunter_report.md`, `model_candidates.md`, `model_tournament.md`, and `absorption_tests.md`.
-- Use confirmed `field_profile.md` if available; if absorption or role assignment depends on a missing, provisional, or stale field profile, update it from closest-literature evidence and stop for confirmation before final judgment.
+- Use confirmed `field_profile.md` if available; if absorption or role assignment depends on a missing, provisional, stale, or `Reopen requested` field profile, update it from closest-literature evidence and stop for confirmation before final judgment.
 - Generate 4-6 model variants before selecting one for full development.
 - Generate three non-neighborhood model directions when local repair is a risk.
 - Do not enter manuscript mode until a candidate theorem survives the main-theorem gate.
@@ -356,7 +356,7 @@ Route:
 - Read `ECONOMETRICA_AI_HUMAN_WORKFLOW.md`.
 - Read `ECONOMETRICA_PANEL_PROTOCOL.md`.
 - Run Stage 7.
-- Reuse confirmed `field_profile.md` when it exists; if it is missing, provisional, or stale, create or update it from the closest-literature evidence and ask for field confirmation before running the referee prompts.
+- Reuse confirmed `field_profile.md` when it exists; if it is missing, provisional, stale, or marked `Reopen requested`, create or update it from the closest-literature evidence and ask for field confirmation before running the referee prompts.
 - Then create `referee_reports/round_N/panel_config.md` by detecting the manuscript's narrowest field, closest literature themes, main method, contribution type, and main technical risk.
 - Include calibration anchors in `panel_config.md`; if close Econometrica anchors cannot be named confidently, write anchor TODOs rather than inventing citations.
 - Assign referees dynamically from `panel_config.md`; do not use a fixed field template unless the manuscript warrants it.

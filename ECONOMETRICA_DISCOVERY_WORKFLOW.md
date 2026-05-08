@@ -412,7 +412,7 @@ AI tasks:
 - Create `idea_kill_tests.md`.
 - Create or update `absorption_tests.md`.
 - Create or update `model_tournament.md`.
-- Check whether `field_profile.md` is confirmed, provisional, or stale. If it is stale, update it from the latest `literature_probe.md` and stop for field confirmation before treating absorption as final.
+- Check whether `field_profile.md` is confirmed, provisional, stale, or marked `Reopen requested`. If it is missing, provisional, stale, or reopened, update it from the latest `literature_probe.md` and stop for field confirmation before treating absorption as final.
 - If the decision is high-stakes, run an Idea Panel or Model Panel from `ECONOMETRICA_PANEL_PROTOCOL.md` rather than a single-agent kill test.
 - If the candidate's deepest primitive or theorem direction is still unclear, run a Primitive Hunter / Theorem Generator Panel before recommending `Invest`, `Refine`, or `Pivot`.
 - For each promising model, simulate:
@@ -566,7 +566,7 @@ Read ECONOMETRICA_DISCOVERY_WORKFLOW.md. Run Stage D5 for the selected model can
 ### Run Discovery Kill Test
 
 ```text
-Read ECONOMETRICA_DISCOVERY_WORKFLOW.md. Run Stage D6. Use model_candidates.md, model_tournament.md, theorem_candidates.md, derivation_notes.md, literature_probe.md, and field_profile.md if available. Derive the absorption families from the closest-literature search and papers actually found; if field_profile.md is missing, provisional, or stale, update it and stop for field confirmation before making a final absorption judgment. Simulate hostile referees and an editor. Create absorption_tests.md and idea_kill_tests.md, then recommend Invest, Refine, Pivot, Demote to benchmark, Park, or Kill for each candidate. Stop for my decision.
+Read ECONOMETRICA_DISCOVERY_WORKFLOW.md. Run Stage D6. Use model_candidates.md, model_tournament.md, theorem_candidates.md, derivation_notes.md, literature_probe.md, and field_profile.md if available. Derive the absorption families from the closest-literature search and papers actually found; if field_profile.md is missing, provisional, stale, or marked `Reopen requested`, update it and stop for field confirmation before making a final absorption judgment. Simulate hostile referees and an editor. Create absorption_tests.md and idea_kill_tests.md, then recommend Invest, Refine, Pivot, Demote to benchmark, Park, or Kill for each candidate. Stop for my decision.
 ```
 
 ## How This Connects to the Main Workflow

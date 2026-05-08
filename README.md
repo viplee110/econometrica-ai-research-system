@@ -192,7 +192,7 @@ Read AGENTS.md and ECONOMETRICA_ORCHESTRATOR.md. Follow the workflow system and 
 For high-stakes review or modeling work, also ask Cursor to read the relevant module:
 
 ```text
-Read AGENTS.md, ECONOMETRICA_ORCHESTRATOR.md, and ECONOMETRICA_PANEL_PROTOCOL.md. Use the independent panel protocol where appropriate. Reuse confirmed field_profile.md when current; if it is missing, provisional, or stale, create or update it and stop for field confirmation before running field-sensitive high-stakes panels. Then create panel_config.md and assign specialist roles dynamically. My task is: [describe the task].
+Read AGENTS.md, ECONOMETRICA_ORCHESTRATOR.md, and ECONOMETRICA_PANEL_PROTOCOL.md. Use the independent panel protocol where appropriate. Reuse confirmed field_profile.md when current; if it is missing, provisional, stale, or marked `Reopen requested`, create or update it and stop for field confirmation before running field-sensitive high-stakes panels. Then create panel_config.md and assign specialist roles dynamically. My task is: [describe the task].
 ```
 
 ### Claude Code, Windsurf, VS Code Agents, and Other Local IDE Agents
@@ -232,7 +232,7 @@ This is less reliable than local use, because the model may not have persistent 
 Use this when you are unsure whether the IDE automatically reads project instructions:
 
 ```text
-Read AGENTS.md and ECONOMETRICA_ORCHESTRATOR.md. Follow this workflow system. If the task involves high-stakes idea, model, theorem, review, or revision decisions, also read ECONOMETRICA_PANEL_PROTOCOL.md. Reuse confirmed field_profile.md when current; if it is missing, provisional, or stale, create or update it and stop for field confirmation before running field-sensitive panels. Create panel_config.md before assigning referees, use parallel isolated agents if available, otherwise use serial isolated prompts, route the task automatically, and stop at human gates. My task is: [describe the task].
+Read AGENTS.md and ECONOMETRICA_ORCHESTRATOR.md. Follow this workflow system. If the task involves high-stakes idea, model, theorem, review, or revision decisions, also read ECONOMETRICA_PANEL_PROTOCOL.md. Reuse confirmed field_profile.md when current; if it is missing, provisional, stale, or marked `Reopen requested`, create or update it and stop for field confirmation before running field-sensitive panels. Create panel_config.md before assigning referees, use parallel isolated agents if available, otherwise use serial isolated prompts, route the task automatically, and stop at human gates. My task is: [describe the task].
 ```
 
 ## Design Philosophy
