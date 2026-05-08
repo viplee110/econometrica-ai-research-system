@@ -246,7 +246,7 @@ The system does not assume that repeated AI revision converges to Econometrica a
 - poor literature positioning
 - manuscript polish without real economic bite
 - local repair traps where each review round adds sections but no stronger main theorem
-- old-theory absorption where a result is just a known theory family under new names
+- old-theory absorption where literature search shows that a result is just a known theory family under new names
 
 AI should expand the search space, generate and test models, simulate adversarial feedback, maintain logs, and automate mechanical checks. The human should own taste, contribution, assumptions, novelty, target journal, and final go/no-go decisions.
 

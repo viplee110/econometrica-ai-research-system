@@ -128,7 +128,7 @@ Required questions:
 - What is the non-substitutable insight?
 - What is surprising after conditioning on the existing literature?
 - Does the model reveal a mechanism, or only repackage a known mechanism?
-- Can the theorem be absorbed by nonlinear pricing, screening, persuasion, disclosure, experimentation, inventory, moral hazard, search, matching, or platform steering?
+- Can the theorem be absorbed by the closest theory families found in the literature search?
 - Are the assumptions doing essential economic work or merely engineering the result?
 - If the main theorem is true, what important belief changes?
 - If the paper disappeared, what would the literature still fail to understand?

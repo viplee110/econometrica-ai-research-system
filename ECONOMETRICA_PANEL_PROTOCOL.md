@@ -175,10 +175,13 @@ Use for novelty and positioning:
 - closest-literature search
 - novelty audit
 - contribution positioning
+- absorption-family identification
 
 Rules:
 
-- Web search or external paper lookup may be used when available.
+- Web search or external paper lookup should be used when available.
+- Closest literature themes and absorption families must be updated from the papers actually found, not fixed from a prewritten field list.
+- If web/search tools are unavailable, mark the literature classification and any absorption conclusion as provisional.
 - Every literature claim must be labeled as verified, unverified, or inferred.
 - Missing citations should be marked as TODO rather than invented.
 
@@ -413,7 +416,7 @@ Idea and Model Panels must explicitly ask whether the candidate theorem is absor
 This paper proves X, and existing theory cannot obtain X because Y.
 ```
 
-Absorption families to test include nonlinear pricing, multidimensional screening, costly disclosure or verification, Bayesian persuasion, information design, dynamic experimentation, inventory or capacity control, moral hazard, certification, reputation, search, matching, and platform steering.
+Absorption families to test must be derived from the closest-literature search and the papers actually found. Do not use a fixed field list as a substitute for identifying the nearest theory families for the user's topic.
 
 If the panel can reproduce the result by renaming variables inside a known framework, it should recommend `Demote to benchmark`, `Pivot`, `Park`, or `Kill`, not `Invest`. If the issue is that a key primitive is reduced-form, the panel should identify what must be endogenized before manuscript development.
 

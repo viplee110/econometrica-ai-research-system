@@ -205,9 +205,11 @@ AI tasks:
 
 - Create `literature_probe.md`.
 - For each shortlisted candidate:
-  - identify closest literature families
+  - identify provisional closest literature families from the idea and model primitives
   - list likely nearest substitute papers
   - generate search queries for Google Scholar, Semantic Scholar, RePEc, NBER, CEPR, SSRN, arXiv, and author pages
+  - when web/search tools are available, run the searches and record the papers actually found
+  - update the closest literature families using the search results rather than relying only on memory
   - describe what would kill the novelty claim
   - describe what would preserve the contribution
 - Separate verified facts from AI inferences.
@@ -215,7 +217,7 @@ AI tasks:
 
 Human gate:
 
-The human should inspect the top substitute papers or ask the AI to help locate them. Do not trust novelty until this gate is passed.
+The human should inspect the top substitute papers or ask the AI to help locate them. Do not trust novelty until this gate is passed. If web/search tools are unavailable, label the literature probe and all downstream absorption tests `provisional`.
 
 ## Stage D4 - Primitive Hunting and Model Candidate Generation
 
@@ -281,6 +283,11 @@ For each model variant, infer the closest classical theory families from the
 topic, primitive friction, agents, information structure, market design, timing,
 and predicted theorem. Ask whether the predicted result is essentially a
 renaming or modest extension of one of those nearest theory families.
+
+This inference must be checked against the live literature search in
+`literature_probe.md` when web/search tools are available. If no search was run,
+record the theory-family classification as provisional and do not use it as a
+final kill or invest decision.
 
 If yes, the model can still be useful, but it cannot be the main theorem unless the note explains the non-absorbed element.
 
@@ -383,7 +390,9 @@ AI tasks:
 
 Absorption test:
 
-- If the theorem is equivalent to nonlinear pricing, screening, persuasion, disclosure, experimentation, inventory, moral hazard, search, matching, or platform steering after renaming variables, it fails as a main theorem.
+- Before judging absorption, confirm the nearest theory families and substitute papers through the latest `literature_probe.md`.
+- If the theorem is equivalent to a nearest classical theory family after renaming variables, it fails as a main theorem.
+- If web/search tools were unavailable and the closest literature was not checked, label the absorption result `provisional` rather than final.
 - If only a narrow part is absorbed, demote that part to a benchmark and search for the non-absorbed theorem.
 - If the model's key object is assumed rather than generated, require an endogenization plan before `Invest`.
 
