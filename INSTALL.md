@@ -28,7 +28,7 @@ Open the paper folder in Codex Desktop. Use:
 Clone the workflow repository somewhere stable, then copy the workflow files into each paper project.
 
 ```powershell
-git clone https://github.com/YOUR-USERNAME/econometrica-ai-research-system.git
+git clone https://github.com/viplee110/econ-theorist-ai.git
 ```
 
 Then copy the files listed in Option A.
@@ -38,7 +38,7 @@ Then copy the files listed in Option A.
 Inside a paper project:
 
 ```powershell
-git submodule add https://github.com/YOUR-USERNAME/econometrica-ai-research-system.git ai_workflow
+git submodule add https://github.com/viplee110/econ-theorist-ai.git ai_workflow
 ```
 
 Then copy or symlink `AGENTS.md` into the paper root. Codex reads `AGENTS.md` most reliably when it is at the project root.

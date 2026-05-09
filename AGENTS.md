@@ -1,6 +1,6 @@
 # Project Instructions
 
-This folder contains an economics paper or research workflow targeting Econometrica-level development.
+This folder contains an economic theory paper or research workflow targeting frontier-level development, originally calibrated against Econometrica-level standards.
 
 Default entry point: first read `ECONOMETRICA_ORCHESTRATOR.md` when it exists. Use it to route broad user requests to the correct workflow module and stage, so the user does not need to remember stage numbers or file names.
 

@@ -1,11 +1,16 @@
-# Econometrica AI Research System
+# Econ Theorist AI
 
-A local Codex workflow system for economics research projects that aim for
-Econometrica-level theory, verification, and revision discipline.
+An AI system for economic theorists, from idea discovery to theory paper
+development.
 
-The system helps researchers move from rough ideas to primitive hunting, model
-tournaments, theorem candidates, absorption tests, human gates, simulated review,
-and controlled revision paths.
+Originally developed with Econometrica-level theory standards in mind, this
+unofficial local workflow system helps researchers move from rough ideas to
+primitive hunting, model tournaments, theorem candidates, absorption tests, human
+gates, simulated review, and controlled revision paths.
+
+This project is not affiliated with Econometrica. The phrase
+`Econometrica-level` is used only as shorthand for high standards of theoretical
+clarity, novelty, and rigor.
 
 If this workflow helps your research, please consider giving the repository a
 star so more researchers can find and improve their own research process.
