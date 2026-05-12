@@ -54,12 +54,12 @@ function Add-Impact($Message) {
   $Impacts.Add($Message) | Out-Null
 }
 
-function Run-VersionCheck($Path, $Args) {
+function Run-VersionCheck($Path, $Arguments) {
   if (-not $Path) {
     return $false
   }
   try {
-    $Output = & $Path @Args 2>&1
+    $Output = & $Path @Arguments 2>&1
     return ($LASTEXITCODE -eq 0)
   } catch {
     return $false

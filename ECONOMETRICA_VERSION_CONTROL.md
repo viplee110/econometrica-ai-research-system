@@ -228,7 +228,7 @@ Forbidden without explicit user approval:
 - cleaning untracked files
 - force pushing
 
-When the user says "回退":
+When the user asks to roll back, revert, or restore prior work:
 
 1. Clarify whether they want to revert a file, a round, or all AI changes.
 2. Show candidate commits/tags/checkpoints.
