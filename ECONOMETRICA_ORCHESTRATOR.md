@@ -27,7 +27,7 @@ First-run check is a soft gate, not a hard gate.
 - A new paper project may still need lightweight project initialization through `project_state.md` and `active_context.md`.
 - The setup check must not silently install large tools, modify PATH, or change system environment variables.
 
-Stage-aware effort calibration replaces user-visible Lite / Standard / Full modes:
+Stage-aware effort calibration uses internal rules rather than user-visible modes:
 
 - Default continuation uses the current project stage, existing artifacts, user request, and risk level.
 - A quick screen is used only when the user explicitly asks for quick, rough, no-file, or short screening. It should still check theorem sentence, closest-literature risk, absorption risk, and go/park/kill logic, and must not claim final novelty.
