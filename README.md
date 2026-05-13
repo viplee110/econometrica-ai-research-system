@@ -385,4 +385,4 @@ See `CONTRIBUTING.md` for the current contribution policy.
 
 ## License
 
-See `LICENSE`.
+Licensed under the Apache License 2.0. See `LICENSE`.
