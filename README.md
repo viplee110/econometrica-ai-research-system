@@ -267,6 +267,8 @@ The workflow therefore treats path display as an output-safety rule:
 
 - local paths and compiled PDF paths should be shown in backticks or fenced code
   blocks, not raw prose;
+- file cards and Markdown file links should use the filename only as the visible
+  title; the full absolute path belongs on a separate `Full path:` line;
 - generated PDFs should be reported only after the exact path is verified with
   `Test-Path -LiteralPath` or `Resolve-Path -LiteralPath`;
 - commands should quote paths with spaces, and path construction should use
@@ -275,7 +277,10 @@ The workflow therefore treats path display as an output-safety rule:
 Example:
 
 ```text
-PDF path:
+File card:
+[main.pdf](<C:/Dropbox/Shufe/Research/Project/My Paper/output/main.pdf>)
+
+Full path:
 `C:/Dropbox/Shufe/Research/Project/My Paper/output/main.pdf`
 
 Open command:

@@ -43,10 +43,15 @@ Windows paths are easily corrupted by Markdown rendering when backslashes are wr
 - Never display local filesystem paths, compiled PDF paths, or command paths as raw prose. Use backticks or fenced code blocks.
 - Prefer display-safe forward slashes, such as `C:/Dropbox/Shufe/Research/Project/.../paper.pdf`, or exact Windows paths inside code spans.
 - Before telling the user that a PDF was created, opened, or is ready, run `Test-Path -LiteralPath` or `Resolve-Path -LiteralPath` on the exact file path when tool access is available.
+- If presenting a PDF as a file card or Markdown file link, use only the basename as the visible title. The card title should look like `model_setup_basic_results.pdf`, never like `C:\Dropbox\Shufe\Research\Project\...\model_setup_basic_results.pdf`.
+- Report the full resolved path separately as `Full path:` in code formatting. Do not squeeze the full path into the file card title.
 - Report generated outputs in this format:
 
 ```text
-PDF path:
+File card:
+[model_setup_basic_results.pdf](<C:/absolute/path/to/model_setup_basic_results.pdf>)
+
+Full path:
 `C:/absolute/path/to/file.pdf`
 
 Open command:

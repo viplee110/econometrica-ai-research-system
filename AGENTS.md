@@ -18,6 +18,8 @@ The system is target-calibrated rather than Econometrica-only. Econometrica-leve
 - Never write a local filesystem path as raw prose. Wrap every local path, compiled PDF path, and command path in backticks or a fenced code block so Markdown cannot consume backslashes.
 - Prefer display-safe paths such as `C:/Dropbox/Shufe/Research/Project/.../paper.pdf`, or exact Windows paths inside code spans such as `C:\Dropbox\Shufe\Research\Project\...\paper.pdf`. Do not write `C:\...` outside code.
 - When reporting a generated or compiled PDF, first verify the real file with `Test-Path -LiteralPath` or `Resolve-Path -LiteralPath`, then report a separate `PDF path:` line in code formatting.
+- When creating a PDF file card or Markdown file link, the visible title must be the filename only, such as `model_setup_basic_results.pdf`. Never use the absolute path as the visible card title or link label.
+- Put the full absolute path on a separate `Full path:` line in code formatting. If using a Markdown link, use filename-only label plus resolved path target, for example `[model_setup_basic_results.pdf](<C:/Dropbox/Shufe/Research/Project/My Paper/model_setup_basic_results.pdf>)`.
 - Construct paths with `Join-Path`, `Resolve-Path -LiteralPath`, `pathlib`, or equivalent path APIs. Do not concatenate directory strings in a way that can drop `\` or `/` separators.
 - If a path contains spaces, brackets, or non-ASCII characters, quote it in shell commands and keep the path in code formatting. Use a Markdown link only after the path has been resolved, and put the link target in angle brackets when needed.
 
